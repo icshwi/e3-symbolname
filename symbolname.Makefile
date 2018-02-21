@@ -29,14 +29,14 @@
 
 include $(E3_REQUIRE_TOOLS)/driver.makefile
 
-APP:=symbolname
+APP:=
 
-SOURCES = symbolname_GNU.c
+SOURCES += symbolname_GNU.c
 SOURCES += symbolname_iocsh.c
 
-HEADERS = symbolname.h
+HEADERS += symbolname.h
 
-DBDS = symbolname.dbd
+DBDS    += symbolname.dbd
 
 
 # db rule is the default in RULES_E3, so add the empty one
